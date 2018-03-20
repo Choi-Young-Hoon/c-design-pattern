@@ -17,13 +17,14 @@ private:
 	{}
 
 
-public:
+public: // My Instance
 	static Singleton* GetInstance() {
 		if (g_Instance == NULL) {
 			g_Instance = new Singleton();
 		}
 		return g_Instance;
 	}
+
 	static void DestroyInstance() {
 		if (g_Instance != NULL) {
 			delete g_Instance;
