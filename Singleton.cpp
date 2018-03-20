@@ -50,8 +50,8 @@ Singleton* Singleton::g_Instance = NULL;
 
 // Test
 int main(int argc, char* argv[]) {
-	Singleton* pSingle1 = Singleton::GetInstance(),
-			 * pSingle2 = Singleton::GetInstance();
+	Singleton* pSingle1 = Singleton::GetInstance();
+	Singleton* pSingle2 = Singleton::GetInstance();
 
 	pSingle1->SetValue(100);
 	pSingle2->SetValue(200);
